@@ -1,10 +1,10 @@
-set APP_NAME=angular2-app-test
+set APP_NAME=angular-tour-of-heroes
 set GITHUB_USERID=mjunaidi
 
 call git clone https://github.com/angular/quickstart.git %APP_NAME%
 cd %APP_NAME%
 
-for /f %i in (non-essential-files.txt) do del %i /F /S /Q
+call for /f %i in (non-essential-files.txt) do del %i /F /S /Q
 rd .git /s /q
 rd e2e /s /q
 
